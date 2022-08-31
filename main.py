@@ -38,7 +38,9 @@ elif 3 in scores_on_top and 5 in scores_on_top:
 elif 4 in scores_on_top and 5 in scores_on_top:
     n_ones, n_twos, n_threes = 1, 1, 1
 elif 3 in scores_on_top:
-    if len(scores_in_mid) > 0:
+    if n_ones == 1 and n_twos == 1:
+        pass
+    elif len(scores_in_mid) > 0:
         n_ones, n_twos = 1, 1
     else:
         n_threes = 1
